@@ -1,0 +1,43 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    animation: rotate 5s linear infinite;
+  }
+  
+  #circle1 { width: 200px; height: 200px; }
+  #circle2 { width: 160px; height: 160px; }
+  #circle3 { width: 120px; height: 120px; }
+  #circle4 { width: 80px; height: 80px; }
+  #circle5 { width: 40px; height: 40px; }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
